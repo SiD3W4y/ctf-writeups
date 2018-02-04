@@ -51,7 +51,7 @@ At first glance the apk doesn't seem to have a lot of code, and no native librar
 
 ```
 
-```
+```java
   private static String iia(int[] input, String key) {
         String output = "";
         for (int i = 0; i < input.length; i++) {
